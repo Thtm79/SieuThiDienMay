@@ -1,19 +1,17 @@
 <?php 
-	class Home extends CI_Controller
+class Home extends CI_Controller
+{
+
+	function index()
+	{
+		$data = array();
+		$data['temp'] = 'site/home/index';
+		$this->load->view('site/layout',$data);
+	}
+
+	function test()
 	{
 
-		function index()
-		{
-
-
-			$data = array();
-			$data['bang1'] = array('ten'=>'Trong Hung','tuoi'=>'19');
-			$this->load->view('site/index.php',$data);
-		}
-
-		function test()
-		{
-			
-		}
 	}
- ?>
+}
+?>
